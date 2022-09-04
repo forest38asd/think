@@ -19,6 +19,8 @@ struct CurrentThinkView: View {
         HStack {
           Text(author)
             .font(.subheadline)
+            .foregroundColor(Color(hue: 1.0, saturation: 0.023, brightness: 0.771))
+            .fontWeight(.semibold)
         }
       }
     }

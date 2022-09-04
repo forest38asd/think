@@ -9,12 +9,25 @@ import SwiftUI
 
 struct ThinkView: View {
   @State var currentThink = "Сначала делай то, что нужно сделать сначала."
+  @State var italic = false
   
   var body: some View {
-    ZStack {
-      Color("BackgroundPrimary")
-        .ignoresSafeArea()
-      CurrentThinkView(think: currentThink, author: "Kolin Ktototam")
+    NavigationView {
+      ZStack {
+        Color("BackgroundPrimary")
+          .ignoresSafeArea()
+        CurrentThinkView(think: currentThink, author: "Kolin Ktototam")
+          .padding(.bottom, 40)
+      }
+      .navigationBarTitleDisplayMode(.inline)
+      .toolbar {
+        ToolbarItem(placement: .navigationBarTrailing) {
+          NavigationLink(destination: { EmptyView() }) {
+            Image(systemName: "gearshape")
+              .foregroundColor(.secondary)
+          }
+        }
+      }
     }
   }
 }
