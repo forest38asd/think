@@ -13,26 +13,22 @@ struct ThinkView: View {
   
   var body: some View {
     NavigationView {
-      ZStack {
-        Color("BackgroundPrimary")
-          .ignoresSafeArea()
-        CurrentThinkView(think: currentThink, author: "Kolin Ktototam")
-          .padding(.bottom, 40)
-      }
-      .navigationBarTitleDisplayMode(.inline)
-      .toolbar {
-        ToolbarItem(placement: .navigationBarTrailing) {
-          NavigationLink(destination: { EmptyView() }) {
-            Image(systemName: "gearshape")
-              .foregroundColor(.secondary)
+      CurrentThinkView(think: currentThink, author: "Kolin Ktototam")
+        .themeBackground()
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+          ToolbarItem(placement: .navigationBarTrailing) {
+            NavigationLink(destination: { EmptyView() }) {
+              Image(systemName: "gearshape")
+                .foregroundColor(.secondary)
+            }
           }
         }
-      }
     }
   }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ThinkView_Previews: PreviewProvider {
   static var previews: some View {
     ThinkView()
       .preferredColorScheme(.dark)
