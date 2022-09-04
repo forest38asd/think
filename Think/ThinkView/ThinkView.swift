@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ThinkView: View {
-  @State var currentThink = "Сначала делай то, что нужно сделать сначала."
-  @State var italic = false
+  var currentThink = Think(text: "Сначала делай то, что нужно сделать сначала.")
   
   var body: some View {
     NavigationView {
-      CurrentThinkView(think: currentThink, author: "Kolin Ktototam")
+      CurrentThinkView(think: currentThink)
         .padding(.bottom, 40)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {

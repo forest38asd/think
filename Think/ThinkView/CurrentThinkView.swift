@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct CurrentThinkView: View {
-  var think: String
-  var author: String?
+  var think: Think
   
   var body: some View {
     VStack(alignment: .trailing, spacing: 12.0) {
-      Text(think)
+      Text(think.text)
         .font(.headline)
-      if let author = author {
+      if let author = think.author {
         HStack {
           Text(author)
             .font(.subheadline)
@@ -30,10 +29,10 @@ struct CurrentThinkView: View {
 
 struct CurrentThinkView_Previews: PreviewProvider {
   static var previews: some View {
-    CurrentThinkView(think: "Сначала сделай то, что нужно сделать сначала.", author: "Автор неизвестен (нет)")
+    CurrentThinkView(think: Think(text: "Сначала сделай то, что нужно сделать сначала.", author: "Автор неизвестен (нет)"))
       .previewLayout(.sizeThatFits)
     
-    CurrentThinkView(think: "Сначала сделай то, что нужно сделать сначала.", author: "Автор неизвестен (нет)")
+    CurrentThinkView(think: Think(text: "Сначала сделай то, что нужно сделать сначала.", author: "Автор неизвестен (нет)"))
       .preferredColorScheme(.dark)
       .previewLayout(.sizeThatFits)
   }

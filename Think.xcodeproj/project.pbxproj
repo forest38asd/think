@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		639A99D928C4B4D200FAF19B /* CurrentThinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A99D828C4B4D200FAF19B /* CurrentThinkView.swift */; };
+		639A99DB28C4C7E000FAF19B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A99DA28C4C7E000FAF19B /* SettingsView.swift */; };
 		639A99DD28C4C85500FAF19B /* View+Modifires.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A99DC28C4C85500FAF19B /* View+Modifires.swift */; };
+		639A99DF28C4D65100FAF19B /* Think.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A99DE28C4D65100FAF19B /* Think.swift */; };
 		63AB7B2328C4A7F900E3EC46 /* ThinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B2228C4A7F900E3EC46 /* ThinkApp.swift */; };
 		63AB7B2528C4A7F900E3EC46 /* ThinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B2428C4A7F900E3EC46 /* ThinkView.swift */; };
 		63AB7B2728C4A7FD00E3EC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AB7B2628C4A7FD00E3EC46 /* Assets.xcassets */; };
@@ -17,7 +19,9 @@
 
 /* Begin PBXFileReference section */
 		639A99D828C4B4D200FAF19B /* CurrentThinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentThinkView.swift; sourceTree = "<group>"; };
+		639A99DA28C4C7E000FAF19B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		639A99DC28C4C85500FAF19B /* View+Modifires.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Modifires.swift"; sourceTree = "<group>"; };
+		639A99DE28C4D65100FAF19B /* Think.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Think.swift; sourceTree = "<group>"; };
 		63AB7B1F28C4A7F900E3EC46 /* Think.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Think.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AB7B2228C4A7F900E3EC46 /* ThinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkApp.swift; sourceTree = "<group>"; };
 		63AB7B2428C4A7F900E3EC46 /* ThinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		639A99E028C4D77600FAF19B /* ThinkView */ = {
+			isa = PBXGroup;
+			children = (
+				63AB7B2428C4A7F900E3EC46 /* ThinkView.swift */,
+				639A99D828C4B4D200FAF19B /* CurrentThinkView.swift */,
+				639A99DE28C4D65100FAF19B /* Think.swift */,
+			);
+			path = ThinkView;
+			sourceTree = "<group>";
+		};
+		639A99E128C4D7CD00FAF19B /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				639A99DA28C4C7E000FAF19B /* SettingsView.swift */,
+			);
+			path = SettingView;
+			sourceTree = "<group>";
+		};
 		63AB7B1628C4A7F900E3EC46 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				63AB7B2228C4A7F900E3EC46 /* ThinkApp.swift */,
-				63AB7B2428C4A7F900E3EC46 /* ThinkView.swift */,
+				639A99E028C4D77600FAF19B /* ThinkView */,
+				639A99E128C4D7CD00FAF19B /* SettingView */,
 				639A99DC28C4C85500FAF19B /* View+Modifires.swift */,
-				639A99D828C4B4D200FAF19B /* CurrentThinkView.swift */,
 				63AB7B2628C4A7FD00E3EC46 /* Assets.xcassets */,
 				63AB7B2828C4A7FD00E3EC46 /* Preview Content */,
 			);
@@ -145,7 +167,9 @@
 			files = (
 				639A99D928C4B4D200FAF19B /* CurrentThinkView.swift in Sources */,
 				63AB7B2528C4A7F900E3EC46 /* ThinkView.swift in Sources */,
+				639A99DB28C4C7E000FAF19B /* SettingsView.swift in Sources */,
 				639A99DD28C4C85500FAF19B /* View+Modifires.swift in Sources */,
+				639A99DF28C4D65100FAF19B /* Think.swift in Sources */,
 				63AB7B2328C4A7F900E3EC46 /* ThinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

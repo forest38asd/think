@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ThemeBackground: ViewModifier {
-    var color = Color("BackgroundPrimary")
+  var color = Color("BackgroundPrimary")
   
   func body(content: Content) -> some View {
     ZStack {
