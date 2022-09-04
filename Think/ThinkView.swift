@@ -14,16 +14,21 @@ struct ThinkView: View {
   var body: some View {
     NavigationView {
       CurrentThinkView(think: currentThink, author: "Kolin Ktototam")
-        .themeBackground()
+        .padding(.bottom, 40)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
           ToolbarItem(placement: .navigationBarTrailing) {
-            NavigationLink(destination: { EmptyView() }) {
-              Image(systemName: "gearshape")
-                .foregroundColor(.secondary)
-            }
+            gearLinkView
           }
         }
+        .themeBackground()
+    }
+  }
+  
+  var gearLinkView: some View {
+    NavigationLink(destination: { SettingsView() }) {
+      Image(systemName: "gearshape")
+        .foregroundColor(.secondary)
     }
   }
 }
