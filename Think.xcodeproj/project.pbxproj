@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		639A99D928C4B4D200FAF19B /* CurrentThinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A99D828C4B4D200FAF19B /* CurrentThinkView.swift */; };
 		63AB7B2328C4A7F900E3EC46 /* ThinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B2228C4A7F900E3EC46 /* ThinkApp.swift */; };
-		63AB7B2528C4A7F900E3EC46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B2428C4A7F900E3EC46 /* ContentView.swift */; };
+		63AB7B2528C4A7F900E3EC46 /* ThinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB7B2428C4A7F900E3EC46 /* ThinkView.swift */; };
 		63AB7B2728C4A7FD00E3EC46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AB7B2628C4A7FD00E3EC46 /* Assets.xcassets */; };
 		63AB7B2A28C4A7FD00E3EC46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AB7B2928C4A7FD00E3EC46 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		639A99D828C4B4D200FAF19B /* CurrentThinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentThinkView.swift; sourceTree = "<group>"; };
 		63AB7B1F28C4A7F900E3EC46 /* Think.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Think.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AB7B2228C4A7F900E3EC46 /* ThinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkApp.swift; sourceTree = "<group>"; };
-		63AB7B2428C4A7F900E3EC46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63AB7B2428C4A7F900E3EC46 /* ThinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkView.swift; sourceTree = "<group>"; };
 		63AB7B2628C4A7FD00E3EC46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63AB7B2928C4A7FD00E3EC46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				63AB7B2228C4A7F900E3EC46 /* ThinkApp.swift */,
-				63AB7B2428C4A7F900E3EC46 /* ContentView.swift */,
+				63AB7B2428C4A7F900E3EC46 /* ThinkView.swift */,
+				639A99D828C4B4D200FAF19B /* CurrentThinkView.swift */,
 				63AB7B2628C4A7FD00E3EC46 /* Assets.xcassets */,
 				63AB7B2828C4A7FD00E3EC46 /* Preview Content */,
 			);
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63AB7B2528C4A7F900E3EC46 /* ContentView.swift in Sources */,
+				639A99D928C4B4D200FAF19B /* CurrentThinkView.swift in Sources */,
+				63AB7B2528C4A7F900E3EC46 /* ThinkView.swift in Sources */,
 				63AB7B2328C4A7F900E3EC46 /* ThinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +200,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
